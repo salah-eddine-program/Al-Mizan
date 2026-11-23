@@ -1,0 +1,6 @@
+{
+  "name": "Al-Mizan — Islamic Knowledge Portal",
+  "description": "A scholarly digital sanctuary for Quranic reading, classical tafsir commentary, trilateral root lexicon analysis, and contemplative recitation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

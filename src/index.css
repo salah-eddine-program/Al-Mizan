@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif", Georgia, serif;
+  --font-sans: "Source Sans 3", system-ui, -apple-system, sans-serif;
+  --font-arabic: "Amiri", "Scheherazade New", "Traditional Arabic", serif;
+
+  --color-parchment: #FBF9F4;
+  --color-parchment-light: #F4EFE6;
+  --color-emerald-deep: #134E3C;
+  --color-emerald-hover: #0F382C;
+  --color-emerald-ink: #003627;
+  --color-sage: #E6F0EB;
+  --color-gold: #C5A059;
+  --color-gold-ink: #8C6B28;
+  --color-slate-ink: #0F172A;
+  --color-slate-body: #1E293B;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #FBF9F4;
+    color: #0F172A;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.shadow-manuscript {
+  box-shadow:
+    0 2px 8px -2px rgba(19, 78, 60, 0.04),
+    0 1px 4px -1px rgba(30, 41, 59, 0.03);
+}
+
+.shadow-scholarly-panel {
+  box-shadow:
+    0 12px 28px -6px rgba(15, 56, 44, 0.08),
+    0 4px 12px -2px rgba(30, 41, 59, 0.04);
+}
